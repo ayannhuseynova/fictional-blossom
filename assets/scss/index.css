@@ -1,1 +1,66 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+body header nav {
+  background-color: #ca1016;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header nav .combined {
+  display: flex;
+  align-items: center;
+}
+body header nav .combined .first .uppercase {
+  text-transform: uppercase;
+}
+body header nav .combined .second .links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+body header nav .combined .second .links li {
+  color: white;
+  text-decoration: none;
+}
+body header nav .combined .second .links li a {
+  color: white;
+  text-decoration: none;
+}
+body header nav .combined .second .links li a:hover {
+  color: rgb(214, 152, 152);
+}
+body header nav .combined .second .links .helper #help {
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+body header nav .combined .second .links .helper #help:hover {
+  color: rgb(214, 152, 152);
+}
+body header nav .combined .second .links .auto {
+  margin: 0 2vw;
+}
+body header nav .third button {
+  background-color: #7ed321;
+  color: white;
+  border: 1px solid #7ed321;
+  border-radius: 8px;
+  padding: 1vw;
+  font-weight: 400;
+  font-size: 15px;
+}
+body header nav .third button:hover {
+  background-color: #68af1c;
+  border: 1px solid #68af1c;
+  transition: 0.4s;
+}/*# sourceMappingURL=index.css.map */
