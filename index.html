@@ -8,18 +8,66 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <!-- index css -->
     <link rel="stylesheet" href="./assets/scss/index.css" />
     <!-- icon css -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <title>Turbo.Az - Avtomobilləri burda seçirlər </title>
+    <title>Turbo.Az - Avtomobilləri burda seçirlər</title>
   </head>
   <body>
+    
     <!-- header start -->
     <header>
+      <section class="col-12">
+        <a
+          target="_blank"
+          href="https://umico.az/categories/1708-avtomobil-uchun-mehsullar?q%5Bhas_discount%5D=true&utm_source=turbo.az&utm_medium=refferal&utm_campaign=avto"
+        >
+          <img src="./assets/images/umico.png" alt="" />
+        </a>
+      </section>
+      <section id="upper-top">
+        <div class="col-5">
+          <div class="list-links">
+            <a
+              href="https://tap.az/?utm_source=turboaz&utm_medium=desktop-nav&utm_campaign=only-logo#_gl=1*1jai247*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+              >Tap.az</a
+            ><a
+              href="https://bina.az/?utm_source=turboaz&utm_medium=desktop-nav&utm_campaign=only-logo#_gl=1*1vjxx12*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MzQwMC42MC4wLjA."
+              >Bina.az</a
+            ><a
+              class="boss"
+              href="https://boss.az/?utm_source=turboaz&utm_medium=desktop-nav&utm_campaign=only-logo#_gl=1*1vjxx12*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MzQwMC42MC4wLjA."
+              >Boss.az</a
+            >
+          </div>
+        </div>
+        <div class="col-7">
+          <p class="contact">
+            Dəstək: <a href="">(012) 599-08-01;</a>
+            <a href="">(012) 505-77-55</a>
+          </p>
+          <p class="helphelp">Yardım</p>
+          <p class="ru">RU</p>
+          <a href="" class="fav"
+            ><i class="bi bi-suit-heart-fill"></i> Seçilmişlər</a
+          >
+          <a href="" class="profile"
+            ><i class="bi bi-person-circle"></i> Giriş</a
+          >
+        </div>
+      </section>
       <nav class="navbar">
-        <div class="combined">
+        <div class="container combined">
           <div class="first">
             <h3 class="uppercase">turbo.az</h3>
           </div>
@@ -51,11 +99,289 @@
         </div>
         <div class="third">
           <button class="btn-new">
-            <i class="fa-solid fa-circle-plus"></i> Yeni elan
+            <i class="bi bi-plus-circle"></i> Yeni elan
           </button>
         </div>
       </nav>
     </header>
     <!-- header end -->
+    <aside>
+        <div class="image-container">
+          <a
+            target="_blank"
+            href="https://www.hyundai.az/venue/umumi-melumat?utm_source=Turbo_aze&utm_medium=cpm&utm_campaign=VENUE&utm_content=static"
+            ><img class="left" src="./assets/images/aside.png" alt=""
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.hyundai.az/venue/umumi-melumat?utm_source=Turbo_aze&utm_medium=cpm&utm_campaign=VENUE&utm_content=static"
+          >
+            <img class="right" src="./assets/images/aside-right.png" alt=""
+          /></a>
+        </div>
+      </aside>
+
+    <!-- main start -->
+    <main>
+      <section id="selections">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <select name="marka" id="marka" class="select-default">
+                <option value=""><p>Marka</p></option>
+                <option value=""><i class="fa-solid fa-x"></i> Sıfırla</option>
+                <option value="">Abarth</option>
+                <option value="">ACG Cats</option>
+                <option value="">Alfa Romeo</option>
+                <option value="">Acura</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <select name="help" id="help" disabled class="model select-default">
+                <option value=""><p>Model</p></option>
+              </select>
+            </div>
+            <div class="col-3">
+              <div class="btn-group">
+                <button>Hamısı</button>
+                <button class="select-default">Yeni</button>
+                <button>Sürülmüş</button>
+              </div>
+            </div>
+            <div class="col-3">
+              <select name="help" id="help" class="select-default">
+                <option value=""><p>Şəhər</p></option>
+                <option value=""><i class="fa-solid fa-x"></i> Sıfırla</option>
+                <option value="">Abarth</option>
+                <option value="">ACG Cats</option>
+                <option value="">Alfa Romeo</option>
+                <option value="">Acura</option>
+              </select>
+            </div>
+          </div>
+          <div class="row second-row">
+            <div class="col-3 first">
+              <form action="">
+                <input
+                  class="input-default"
+                  type="text"
+                  placeholder="Min"
+                /><input type="text" placeholder="Max" class="input-default" />
+              </form>
+            </div>
+            <div class="col-3 second-col">
+              <select name="marka" id="marka">
+                <option value=""><p>AZN</p></option>
+                <option value=""><i class="fa-solid fa-x"></i> Sıfırla</option>
+                <option value="">USD</option>
+                <option value="">EURO</option>
+              </select>
+              <button>Kredit</button>
+              <button>Barter</button>
+            </div>
+            <div class="col-3">
+              <select name="marka" id="marka" class="select-default">
+                <option value=""><p>Ban növü</p></option>
+                <option value=""><i class="fa-solid fa-x"></i> Sıfırla</option>
+                <option value="">Furqon</option>
+                <option value="">Hetçbek</option>
+              </select>
+            </div>
+            <div class="col-3 last">
+              <div class="col-3">
+                <select name="marka" id="min" class="input-default">
+                  <option value=""><p>İl, min</p></option>
+                  <option value="">
+                    <i class="fa-solid fa-x"></i> Sıfırla
+                  </option>
+                  <option value="">Furqon</option>
+                  <option value="">Hetçbek</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <select name="marka" id="max" class="input-default">
+                  <option value=""><p>İl, maks</p></option>
+                  <option value="">
+                    <i class="fa-solid fa-x"></i> Sıfırla
+                  </option>
+                  <option value="">Furqon</option>
+                  <option value="">Hetçbek</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row third-row">
+            <div class="col-7">
+              <p>
+                Bu gün:
+                <a href="https://turbo.az/autos" target="_blank"
+                  >1267 yeni elan</a
+                >
+              </p>
+            </div>
+            <div class="col-5">
+              <a href="" class="zero">Sıfırla</a>
+              <a href="">
+                Daha çox filtr <i class="bi bi-chevron-compact-down"></i
+              ></a>
+              <a class="button" href="">Elanları göstər</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="vip">
+        <div class="container">
+          <div class="row">
+            <div class="col-7"><h4>VIP ELANLAR</h4></div>
+            <div class="col-5">
+              <a
+                target="_blank"
+                href="https://www.kapitalbank.az/cards/simpleCards?utm_medium=textlink&utm_source=turbo.az&utm_campaign=CNV-birkart-taksit-birbank-cashback-debet-usps-AZ&utm_content=up-to-30-percent-cashback&order-lead=275"
+                ><img src="./assets/images/kapital.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cars">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="card">
+                  <img
+                    src="https://turbo.azstatic.com/uploads/full/2022%2F09%2F23%2F13%2F09%2F35%2F7ddb3bd1-acfa-4f1f-8c0e-0dd3470484fb%2F67490_4vwGQyW6HbevidnsgadH9A.jpg#_gl=1*1at392e*_ga*NjI5MjY0MzIwLjE2NjYxMDc5ODc.*_ga_68B6PJZXYD*MTY2NjE5MTQ4OC40LjEuMTY2NjE5MjExNy42MC4wLjA."
+                    alt=""
+                  />
+                  <div class="car-info">
+                    <h4>27.000 $</h4>
+                    <p class="first-child">Toyota Prado</p>
+                    <p class="first-child">2012. 2.7 L, 168.000 km</p>
+                    <p class="last-child">Bakı, dünən 10:27</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+
+    
   </body>
 </html>
