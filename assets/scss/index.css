@@ -28,6 +28,10 @@ body header #upper-top .col-5 .list-links a {
   text-decoration: none;
   color: #8d94ad;
 }
+body header #upper-top .col-5 .list-links a:hover {
+  color: #ca1016;
+  transition: 0.4s;
+}
 body header #upper-top .col-5 .list-links .boss {
   margin-right: 50%;
 }
@@ -54,6 +58,7 @@ body header #upper-top .col-7 .helphelp,
 body header #upper-top .col-7 .ru,
 body header #upper-top .col-7 .fav,
 body header #upper-top .col-7 .profile {
+  text-decoration: none;
   color: #8d94ad;
   cursor: pointer;
 }
@@ -96,6 +101,7 @@ body header nav .combined .second .links li a {
 body header nav .combined .second .links li a:hover {
   color: rgb(214, 152, 152);
   cursor: pointer;
+  transition: 0.5s;
 }
 body header nav .combined .second .links .helper #help {
   background-color: transparent;
@@ -106,6 +112,7 @@ body header nav .combined .second .links .helper #help {
 }
 body header nav .combined .second .links .helper #help:hover {
   cursor: pointer;
+  transition: 0.5s;
   color: rgb(214, 152, 152);
 }
 body header nav .combined .second .links .auto {
@@ -296,14 +303,16 @@ body main #cars .container .row .col-3 a {
 }
 body main #cars .container .row .col-3 a .card {
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 1.3vw;
+  position: relative;
   background-color: white;
 }
 body main #cars .container .row .col-3 a .card img {
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-top: -20px;
 }
 body main #cars .container .row .col-3 a .card .car-info {
   margin-top: -0.8vw;
@@ -328,9 +337,49 @@ body main #cars .container .row .col-3 a .card .car-info .last-child {
   font-size: 19px;
   font-weight: 300;
 }
+body main #cars .container .row .col-3 a .card .arrow {
+  position: relative;
+  top: 15px;
+  left: 15px !important;
+  color: white;
+  background-color: #76c81c;
+  border: 1px solid #76c81c;
+  border-radius: 50%;
+  padding: 2px;
+}
+body main #cars .container .row .col-3 a .card .heart {
+  position: relative;
+  top: 15px;
+  left: 190px;
+  color: darkgray;
+  font-size: 18px;
+}
+body main #cars .container .row .col-3 a .card .salon {
+  position: relative;
+  top: 150px;
+  left: -35px;
+  color: white;
+  background-color: #4c39ce;
+  display: inline;
+  font-weight: 500;
+  padding: 3px 8px;
+  border: 1px solid #4c39ce;
+  border-radius: 8px;
+}
+body main #cars .container .row .col-3 a .card .star {
+  position: relative;
+  top: 150px;
+  left: 100px;
+  color: red;
+  background-color: white;
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
 body main #cars .container .row .col-3 a .card:hover {
-  box-shadow: 6px 8px rgba(198, 197, 197, 0.168627451);
-  transition: 0.4s;
+  box-shadow: 8px 8px 5px rgba(181, 171, 171, 0.2901960784);
+  border-radius: 15px;
+  transition: 0.7s;
 }
 body aside {
   position: -webkit-sticky;
